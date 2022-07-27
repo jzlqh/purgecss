@@ -28,8 +28,7 @@ const purgePlugin = (options) => {
         class: [],
         tag: []
     };
-    htmlExtractor(options && options.html, extractInfo);
-    console.log('extractInfo', extractInfo);
+    htmlExtractor(options?.html, extractInfo);
     return {
         postcssPlugin: 'postcss-purge',
         Rule (rule) {                      

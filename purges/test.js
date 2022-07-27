@@ -9,7 +9,7 @@ const c = postcss([purge({
 })])
 
 c.process(css).then(result => {
-    // console.log(result.css);
+    console.log(result.css);
 });
 
 
